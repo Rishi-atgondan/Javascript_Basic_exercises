@@ -140,3 +140,36 @@ function fibonacci() {
         n2 = nn;
     }
 }
+
+// 11. JavaScript Program to Make a Simple Calculator
+
+function calculator(){
+
+let operator = prompt('Enter operator ( either +, -, *,/ or % ): ');
+
+
+        let a = parseFloat(prompt('Enter the first number you want to calculate: '));
+        let b = parseFloat(prompt('Enter the second number you want to calculate: '));
+
+        let ans;
+
+
+        if (operator == '+') {
+            ans = a + b;
+        }
+        else if (operator == '-') {
+            ans = a - b;
+        }
+        else if (operator == '*') {
+            ans = a * b;
+        }
+        else if (operator == '%') {
+            ans = a/100 * b;
+        }
+        else {
+            ans = a / b;
+        }
+        // document.write(`${a} ${operator} ${b} = ${ans}`)
+        document.write(`${a} ${operator} ${b} = ${ans}`)
+
+    }
