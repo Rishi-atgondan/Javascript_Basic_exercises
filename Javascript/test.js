@@ -1,7 +1,7 @@
 //1.JavaScript Program To Print Hello World
 
 function print() {
-    document.write("Hello World" + "<br>" + "<br>");
+    document.write("Hello World");
 }
 
 //2.JavaScript Program to Add Two Numbers
@@ -17,8 +17,7 @@ function addnum() {
 
 function sqrt() {
     let d = Math.sqrt(10);
-    let e = Math.sqrt(8);
-    document.write("Square Root is:" + d + e);
+    document.write("Square Root is:" + d);
 }
 
 //4.JavaScript Program to Swap Two Variables
@@ -143,33 +142,33 @@ function fibonacci() {
 
 // 11. JavaScript Program to Make a Simple Calculator
 
-function calculator(){
+function calculator() {
 
-let operator = prompt('Enter operator ( either +, -, *,/ or % ): ');
-
-
-        let a = parseFloat(prompt('Enter the first number you want to calculate: '));
-        let b = parseFloat(prompt('Enter the second number you want to calculate: '));
-
-        let ans;
+    let operator = prompt('Enter operator ( either +, -, *,/ or % ): ');
 
 
-        if (operator == '+') {
-            ans = a + b;
-        }
-        else if (operator == '-') {
-            ans = a - b;
-        }
-        else if (operator == '*') {
-            ans = a * b;
-        }
-        else if (operator == '%') {
-            ans = a/100 * b;
-        }
-        else {
-            ans = a / b;
-        }
-        // document.write(`${a} ${operator} ${b} = ${ans}`)
-        document.write(`${a} ${operator} ${b} = ${ans}`)
+    let a = parseFloat(prompt('Enter the first number you want to calculate: '));
+    let b = parseFloat(prompt('Enter the second number you want to calculate: '));
 
+    let ans;
+
+
+    if (operator == '+') {
+        ans = a + b;
     }
+    else if (operator == '-') {
+        ans = a - b;
+    }
+    else if (operator == '*') {
+        ans = a * b;
+    }
+    else if (operator == '%') {
+        ans = a / 100 * b;
+    }
+    else {
+        ans = a / b;
+    }
+    // document.write(`${a} ${operator} ${b} = ${ans}`)
+    document.write(`${a} ${operator} ${b} = ${ans}`)
+
+}
