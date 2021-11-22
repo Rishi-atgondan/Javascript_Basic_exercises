@@ -80,3 +80,63 @@ function oddoreven2() {
     }
 }
 
+// 8. JavaScript Program to Check Prime Number
+function primenum() {
+    const inputNumber = 13;
+    let Prime = true;
+    if (inputNumber === 1) {
+        document.write("1 is neither prime nor composite.");
+    } else if (inputNumber > 1) {
+        for (let i = 2; i < inputNumber; i++) {
+            if (inputNumber % i == 0) {
+                Prime = false;
+                break;
+            }
+        }
+        if (Prime) {
+            document.write(`${inputNumber} is a prime number`);
+        } else {
+            document.write(`${inputNumber} is a not prime number`);
+        }
+    } else {
+        ("it is not a prime number.");
+    }
+}
+
+// 9. JavaScript Program to Find the Factorial of a Number
+function facnum() {
+
+    const facnum = 10;
+
+    if (facnum < 0) {
+        document.write("Factorial for negative number does not exist. :(");
+    } else if (facnum === 0) {
+        document.write(`The factorial of ${facnum} is 1.`);
+    } else {
+        let fact = 1;
+        for (i = 1; i <= facnum; i++) {
+            fact *= i;
+        }
+        document.write(`The factorial of ${facnum} is ${fact}`);
+    }
+
+
+}
+
+// 10. JavaScript Program to Print the Fibonacci Sequence
+
+function fibonacci() {
+    const fibnum = 12;
+    let n1 = 0,
+        n2 = 1,
+        nn;
+
+    document.write("Fibonacci Series is:");
+
+    for (let i = 1; i <= fibnum; i++) {
+        document.write(n1, ", ");
+        nn = n1 + n2;
+        n1 = n2;
+        n2 = nn;
+    }
+}
