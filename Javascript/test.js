@@ -81,7 +81,7 @@ function oddoreven2() {
 
 // 8. JavaScript Program to Check Prime Number
 function primenum() {
-    const inputNumber = 13;
+    const inputNumber = 51;
     let Prime = true;
     if (inputNumber === 1) {
         document.write("1 is neither prime nor composite.");
@@ -97,8 +97,6 @@ function primenum() {
         } else {
             document.write(`${inputNumber} is a not prime number`);
         }
-    } else {
-        ("it is not a prime number.");
     }
 }
 
