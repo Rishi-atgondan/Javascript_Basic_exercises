@@ -10,7 +10,7 @@ function addnum() {
     let a = 20;
     let b = 10;
     let c = a + b;
-    document.write("Sum of Two Numbers:" + c)
+    document.write("Sum of Two Numbers:" + c);
 }
 
 //3.JavaScript Program to Find the Square Root
@@ -51,7 +51,7 @@ function randomnum() {
 
 function randomnum1() {
     let a = Math.random();
-    let b = Math.floor((a * 50) + 1);
+    let b = Math.floor(a * 5);
     document.write(b);
 }
 
@@ -81,7 +81,7 @@ function oddoreven2() {
 
 // 8. JavaScript Program to Check Prime Number
 function primenum() {
-    const inputNumber = 51;
+    const inputNumber = 8;
     let Prime = true;
     if (inputNumber === 1) {
         document.write("1 is neither prime nor composite.");
